@@ -12,6 +12,9 @@ if($conn->connect_error){
     die("connection failed:".$conn->connect_error);
 }
 
+
+
+
 $sql ="SELECT * FROM siswa";
 $search = isset($_GET['search']) ? $_GET['search']:'';
 $sql="SELECT * FROM siswa  WHERE nama_siswa LIKE '%$search%'";
